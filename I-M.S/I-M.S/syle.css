@@ -1,0 +1,244 @@
+
+@import "bootstrap-icons/font/bootstrap-icons";
+
+body {
+    background-position: center bottom;
+    font-family: 'Neuton', serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px; 
+}
+.logo {
+    align-items: start;
+    width: 180px;
+    display: inline-block;
+}
+.logo img {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+.section-padding {
+    padding: 70px 0;
+    width: 100%;
+}
+.carousel-item{
+    height: 80vh;
+    min-height: 300px;
+}
+.carousel-caption {
+    bottom: 200px;
+    z-index: 2;
+}
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+.carousel-caption p{
+    width: 60px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.carousel-inner:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(0, 0, 0, 0.327);
+    z-index: 1;
+}
+
+.navbar-var a {
+ font-size: 125px;
+ text-transform: uppercase;
+ font-weight: 500;
+ color: rgb(0, 0, 0);
+}
+
+.navbar-dark .navbar-brand {
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+   color: #0b28ac; 
+}
+.w-100 {
+    height:  100vh;
+}
+.navbar-tooggler {
+    padding: 1px 5px;
+    font-size: 10px;
+    line-height: 0.3;
+}
+.services .card-body i {
+    font-size: 50px;
+}
+.team .card-body {
+    font-size: 10px;
+}
+h2 {
+    color: #000000;
+    margin: 3px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h5 {
+    color: #000000;
+    margin: 3px;
+}
+.p{
+    color: #000000;
+    margin: 3px;
+} 
+p{
+    color: #000000;
+    margin: 3px;
+}
+ .carousel-caption{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.card img {
+    height: 300px;
+    width: 50%;
+    margin: 2.5em 60px;
+    align-content: center;
+} 
+    .container{
+    display: flex;
+    justify-content: center;
+    width: 100%; 
+}
+.card{
+    margin: 50px;
+    height: 280px;
+    width: 900px;
+    box-shadow: 5px 5px 20px;
+    overflow: hidden;
+    background-color: #000000;
+    color: azure;
+   text-underline-position: 10%;
+   margin-right: 10px;
+   margin-left: 10px;
+
+}
+.card-intro{
+    margin-right: 10px;
+    align-content: center;
+}
+ .img-fluid {
+    width: 100%;
+    margin:10px;
+
+}
+.img-about{
+    margin: 2px;
+    margin-left: 2px;
+}
+
+ @media ( max-whidth:767){
+    .navbar-var {
+        text-align: center;
+    }
+    .carousel-item {
+        height: 70vh;
+    }
+    .w-100 {
+        height: 70vh;
+    }
+    .carousel-caption {
+        bottom: 125px;
+    }
+    .carousel-caption h5 {
+        font-size: 17px;
+    }
+    .carousel-caption a{
+        padding: 5px 10px;
+        font-size: 15px ;
+    }
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1,5;
+        font-size: 15px;
+    }
+    .about-text {
+        padding-top: 30px;
+    }
+    .card {
+        margin-bottom: 30px;
+        height: 50px;
+        position: absolute;
+        margin-right: 20px;
+        
+    }
+    .section-padding{
+        padding: 5px 0;
+        margin: 3px;
+    } 
+
+ }
+ .modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+    color: #0606ce;
+}
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: rgb(68, 0, 0);
+	background: -moz-linear-gradient(#140000, #000000);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#000000, #999);
+  -webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+}
+
+ .dialogModal1 {
+    color: #0606ce;
+    pointer-events: auto;
+
+    
+  }
+.close:hover { background: #00ffff; }
+form{
+    
+    position: relative;
+    width: 85%;
+    height: 300px;
+    margin: 10px;
+    padding: 1em;
+    box-sizing: border-box;
+}
+footer {
+    margin-right: 60px;
+
+}
